@@ -1,0 +1,56 @@
+.about {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.about_image {
+    float: left;
+    width: 20em;
+    padding: 0 2em 0 6em;
+    display: flex;
+}
+
+.about_info {
+    line-height: 2em;
+    font-size: 1.2em;
+    padding: 1.3em 5em;
+}
+
+footer {
+    padding: 3em 5em;
+}
+
+.about_copy {
+    float: left;
+    padding: 1em;
+}
+
+.about_social {
+    float: right;
+    margin: 0.2em 0.4em;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 50em) {
+    .about {
+        width: 95%;
+    }
+
+    .about_image {
+        float: none;
+        width: 50%;
+        padding: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about_info {
+        padding: 0 1em;
+        text-align: justify;
+    }
+
+    footer {
+        padding: 0;
+    }
+}

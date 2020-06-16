@@ -1,0 +1,134 @@
+.services {
+    height: 100vh;
+    display: grid;
+    grid-row-gap: 5em;
+    grid-column-gap: 3em;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "image1 text1"
+        "image2 text2"
+        "image3 text3"
+        "image4 text4"
+        "image5 text5";
+}
+
+.services img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 0 0 5em;
+    width: 200px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+.services .info {
+    text-align: left;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    font-size: 1em;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 1em;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion_title {
+    float: left;
+    width: 90%;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: red;
+    float: right;
+}
+
+.active:after {
+    color: red;
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+@media screen and (max-width: 50em) {
+    .services {
+        grid-row-gap: 2em;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image1"
+            "text1"
+            "image2"
+            "text2"
+            "image3"
+            "text3"
+            "image4"
+            "text4"
+            "image5"
+            "text5";
+    }
+
+    .services img {
+        margin-top: 2em;
+        padding: 1em 0 0 0em;
+        width: 100px;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+.services-1-image {
+    grid-area: image1;
+}
+.services-2-image {
+    grid-area: image2;
+}
+.services-3-image {
+    grid-area: image3;
+}
+.services-4-image {
+    grid-area: image4;
+}
+.services-5-image {
+    grid-area: image5;
+}
+
+.services-1-text {
+    grid-area: text1;
+}
+.services-2-text {
+    grid-area: text2;
+}
+.services-3-text {
+    grid-area: text3;
+}
+.services-4-text {
+    grid-area: text4;
+}
+.services-5-text {
+    grid-area: text5;
+}

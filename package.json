@@ -1,0 +1,16 @@
+{
+  "name": "Inversius",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-coffee": "^3.0.3",
+    "gulp-concat": "latest",
+    "gulp-connect": "^5.7.0",
+    "gulp-cssnano": "latest",
+    "gulp-postcss": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uglify-es": "latest",
+    "gulp-util": "latest"
+  }
+}

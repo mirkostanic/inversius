@@ -1,0 +1,27 @@
+body {
+	font-family: Helvetica, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+	margin: 0;
+	color: #cecece;
+	background: #1d1e21;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #cecece;
+	outline: none;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+html.js, .js body {
+	overflow: hidden;
+	height: 100vh;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
